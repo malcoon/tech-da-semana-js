@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Semana Tech JavaScript - Rafaella Ballerini</title>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <a href="index.html">
+            <img src="assets/imgs/logo-ballerini.svg" alt="Logo Ballerini" class="logo-ballerini">
+        </a>
+
+        <h1 class="primary-title">
+            Desafio Extra: HTML, CSS & JS
+        </h1>
+    </header>
+
+    <main>
+        <section class="challenge-extra-content">
+            <div class="dados">
+                <h3 class="dados-title">Preencha os campos abaixo:</h3>
+
+                <div class="dados-input">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" class="name" id="inputNome">
+
+                    <label>Idade:</label>
+                    <input type="number" name="idade" class="idade" id="inputIdade">
+
+                    <label>Skills:</label>
+                    <input type="text" name="skills" class="skills" id="inputSkills">
+
+                    <div class="btn-cadastro">
+                        <input  type="reset" class="btn-submit" id="btn-submit" value="Cadastrar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenge-extra-return returnChallenge">
+            <div class="dados">
+                <h3 class="dados-title returnTitle" id="returnTitle">Seus dados aparecerão aqui</h3>
+                <!-- nome -->
+                <p class="returnNome" id="returnNome"></p>
+                <p class="returnNomeUsuario" id="returnNomeUsuario"></p>
+                <!-- idade -->
+                <p class="returnIdade" id="returnIdade"></p>
+                <p class="returnIdadeUsuario" id="returnIdadeUsuario"></p>
+                <!-- skills -->
+                <p class="returnSkills" id="returnSkills"></p>
+                <p class="returnSkillsUsuario" id="returnSkillsUsuario"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por: <a href="https://www.instagram.com/_malcoon/">Renilson Medeiros</a>
+    </footer>
+
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
