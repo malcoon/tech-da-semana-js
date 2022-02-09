@@ -268,7 +268,7 @@ footer {
     font-size: 12px;
     font-weight: 600;
     text-align: center;
-    padding: 4rem 0 0 0;
+    padding: 2rem 0;
     color: var(--dark-gray);
     justify-content: center;
 }

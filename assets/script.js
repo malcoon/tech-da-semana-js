@@ -27,13 +27,13 @@ function submit() {
     returnTitle.innerHTML = 'Usuário Cadastrado!'
 
     returnNome.innerHTML = 'Nome:'
-    returnNomeUsuario.innerHTML = nome
+    returnNomeUsuario.innerHTML = `${nome}`
 
     returnIdade.innerHTML = 'Idade:'
-    returnIdadeUsuario.innerHTML = idade + ' Anos'
+    returnIdadeUsuario.innerHTML = `${idade}` + ' Anos'
 
     returnSkills.innerHTML = 'Skills:'
-    returnSkillsUsuario.innerHTML = skills
+    returnSkillsUsuario.innerHTML = `${skills}`
 
     returnGithub.innerHTML = 'Redes Sociais:'
     returnGithubUsuario.innerHTML = `<a href="${github}" target="_blank"><i class="fa-brands fa-github"></i></a>, 
