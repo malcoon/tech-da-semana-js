@@ -242,19 +242,25 @@ section {
     background-color: var(--yellow);
 }
 
-.returnNome, .returnIdade, .returnSkills {
+.returnNome, .returnIdade, .returnSkills, .returnGithub {
     font-size: 18px;
     color: var(--gray);
     margin-bottom: .3rem;
 }
 
-.returnNomeUsuario, .returnIdadeUsuario, .returnSkillsUsuario {
+.returnNomeUsuario, .returnIdadeUsuario, .returnSkillsUsuario, .returnGithubUsuario {
     font-size: 18px;
     font-weight: 600;
     color: var(--white);
     margin-bottom: .5rem;
     padding: 1rem .5rem;
 }
+
+    .returnGithubUsuario a i {
+        padding: .2rem;
+        font-size: 24px;
+        color: var(--yellow);
+    }
 
 footer {
     width: 100%;
