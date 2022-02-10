@@ -27,26 +27,29 @@
                 <h3 class="dados-title">Preencha os campos abaixo:</h3>
 
                 <div class="dados-input">
+                    <label for="perfil">Url da sua foto:</label>
+                    <input type="url" name="perfil" class="perfil" id="inputPerfil">                 
+
                     <label>Nome:</label>
-                    <input type="text" name="nome" class="name" id="inputNome">
+                    <input required type="text" name="nome" class="name" id="inputNome">
 
                     <label>Idade:</label>
-                    <input type="number" name="idade" class="idade" id="inputIdade">
+                    <input required type="number" name="idade" class="idade" id="inputIdade">
 
                     <label>Skills:</label>
-                    <input type="text" name="skills" class="skills" id="inputSkills">
+                    <input required type="text" name="skills" class="skills" id="inputSkills">
 
                     <label>Github:</label>
-                    <input type="text" name="github" class="github" id="inputGithub">
+                    <input required type="text" name="github" class="github" id="inputGithub">
 
                     <label>Twitter:</label>
-                    <input type="text" name="twitter" class="twitter" id="inputTwitter">
+                    <input required type="text" name="twitter" class="twitter" id="inputTwitter">
 
                     <label>Instagram:</label>
-                    <input type="text" name="instagram" class="instagram" id="inputInstagram">
+                    <input required type="text" name="instagram" class="instagram" id="inputInstagram">
 
                     <label>Linkedin:</label>
-                    <input type="text" name="linkedin" class="linkedin" id="inputLinkedin">
+                    <input required type="text" name="linkedin" class="linkedin" id="inputLinkedin">
 
                     <div class="btn-cadastro">
                         <input  type="reset" class="btn-submit" id="btn-submit" value="Cadastrar">
@@ -58,20 +61,27 @@
         <section class="challenge-extra-return returnChallenge">
             <div class="dados">
                 <h3 class="dados-title returnTitle" id="returnTitle">Seus dados aparecerão aqui</h3>
-                <!-- nome -->
-                <p class="returnNome" id="returnNome"></p>
-                <p class="returnNomeUsuario" id="returnNomeUsuario"></p>
-                <!-- idade -->
-                <p class="returnIdade" id="returnIdade"></p>
-                <p class="returnIdadeUsuario" id="returnIdadeUsuario"></p>
-                <!-- skills -->
-                <p class="returnSkills" id="returnSkills"></p>
-                <p class="returnSkillsUsuario" id="returnSkillsUsuario"></p>
-                <!-- github -->
-                <p class="returnGithub" id="returnGithub"></p>
-                <p class="returnGithubUsuario">
-                    <a href="" id="returnGithubUsuario"></a>
-                </p>
+                <div class="dados-input-content">
+                        <!-- perfil -->
+                        <p class="returnPerfil" id="returnPerfil"></p>
+                        <p class="returnPerfilUsuario" id="returnPerfilUsuario"></p>
+                    <div class="input-content-dados">
+                        <!-- nome -->
+                        <p class="returnNome" id="returnNome"></p>
+                        <p class="returnNomeUsuario" id="returnNomeUsuario"></p>
+                        <!-- idade -->
+                        <p class="returnIdade" id="returnIdade"></p>
+                        <p class="returnIdadeUsuario" id="returnIdadeUsuario"></p>
+                        <!-- skills -->
+                        <p class="returnSkills" id="returnSkills"></p>
+                        <p class="returnSkillsUsuario" id="returnSkillsUsuario"></p>
+                        <!-- github -->
+                        <p class="returnGithub" id="returnGithub"></p>
+                        <p class="returnGithubUsuario">
+                            <a href="" id="returnGithubUsuario"></a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
