@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'helveticaregular';
-    src: url('../assets/helvetica/helvetica-webfont.woff2') format('woff2'),
-         url('../assets/helvetica/helvetica-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -16,12 +10,12 @@
     color: var(--white);
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'helveticaregular';
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --white: #ffffff;
-    --gray: #64666b;
+    --gray: #e2e2e2;
     --dark-gray: #1d1e21;
 
     --black-one: #0c0d0f;
@@ -44,7 +38,7 @@
 
 body {
     color: var(--black-one);
-    background-color: var(--black-one);
+    background-color: var(--white);
 }
 
 a {
@@ -93,39 +87,15 @@ main {
     padding: 1rem 0;
     font-size: 14px;
     max-width: 1440px;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "one three"
-    "two extra";
+    "extra return";
 }
 
 section {
-    gap: .6rem;
     width: 700px;
-    display: flex;
-    padding: 1.5rem;
-    flex-direction: column;
-}
-
-.challenge-one {
-    border: 3px solid var(--green);
-    box-shadow: 4px 4px 0 var(--dark-gray);
-}
-
-.challenge-two {
-    border: 3px solid var(--pink);
-    box-shadow: 4px 4px 0 var(--dark-gray);
-}
-
-.challenge-three {
-    border: 3px solid var(--purple);
-    box-shadow: 4px 4px 0 var(--dark-gray);
-}
-
-.challenge-extra {
-    border: 3px solid var(--yellow);
-    box-shadow: 4px 4px 0 var(--dark-gray);
+    padding: 1.5rem 1rem;
 }
 
 .challenge-link {
@@ -135,38 +105,6 @@ section {
     border-bottom: 1px solid var(--dark-gray);
 }
 
-    .green {
-        color: var(--green);
-    }
-
-        .green:hover {
-            opacity: .8;
-        }
-
-    .pink {
-        color: var(--pink);
-    }
-
-        .pink:hover {
-            opacity: .8;
-        }
-
-    .purple {
-        color: var(--purple);
-    }
-
-        .purple:hover {
-            opacity: .8;
-        }
-
-    .yellow {
-        color: var(--yellow);
-    }
-
-        .yellow:hover {
-            opacity: .8;
-        }
-
 .challenge-description {
     font-size: 16px;
     font-weight: 500;
@@ -174,19 +112,7 @@ section {
     line-height: 1.4rem;
 }
 
-.challenge-one {
-    grid-area: one;
-}
-
-.challenge-two {
-    grid-area: two;
-}
-
-.challenge-three {
-    grid-area: three;
-}
-
-.challenge-extra {
+.challenge-extra-content {
     grid-area: extra;
 }
 
@@ -194,18 +120,21 @@ section {
         color: var(--yellow);
     }
 
+.challenge-extra-return {
+    grid-area: return;
+}
+
 /* Desafio Extra*/
 .challenge-extra-content {
     width: 700px;
     justify-content: center;
-    border: 2px solid var(--yellow);
-    box-shadow: 4px 4px 0 var(--dark-gray);
 }
 
 .dados-title {
     font-size: 20px;
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--black-one);
 }
 
 .dados-input {
@@ -215,57 +144,91 @@ section {
 }
 
     .dados-input label {
+        z-index: 9999;
         font-size: 16px;
-        color: var(--gray)
+        font-weight: 600;
+        width: fit-content;
+        margin-left: .5rem;
+        padding: .3rem .8rem;
+        border-radius: .4rem;
+        color: var(--black-one);
+        background-color: var(--white);
     }
 
     .dados-input input {
-        padding: 1rem .5rem;
+        margin-top: -1.2rem;
+        padding: 1rem .8rem;
         margin-bottom: .5rem;
-        background-color: var(--black-two);
+        border-radius: .4rem;
+        transition: .2s linear;
+        color: var(--black-three);
+        background-color: var(--white);
+        border: 2px solid var(--black-two);
     }
 
 .challenge-extra-return {
     width: 700px;
     color: var(--white);
-    background-color: var(--black-two);
-    box-shadow: 4px 4px 0 var(--dark-gray);
+    border-radius: .4rem;
+    height: calc(100% - 330px);
+    background-color: var(--white);
+    border: 2px solid var(--purple);
+    box-shadow: -4px 4px 0 var(--purple);
+}
+
+.returnTitle {
+    font-style: italic;
+    margin-bottom: 2rem;
 }
 
 .btn-cadastro input {
     width: 100%;
+    border: none;
     cursor: pointer;
+    margin-top: 1rem;
     font-weight: bolder;
     padding: 1rem .5rem;
+    color: var(--white);
     text-transform: uppercase;
-    color: var(--black-three);
-    background-color: var(--yellow);
+    background-color: var(--purple);
 }
 
+    .btn-cadastro input:hover {
+        color: var(--black-two);
+        background-color: var(--yellow);
+    }
+
 .returnNome, .returnIdade, .returnSkills, .returnGithub {
-    font-size: 18px;
-    color: var(--gray);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-gray);
 }
 
 .returnNomeUsuario, .returnIdadeUsuario, .returnSkillsUsuario, .returnGithubUsuario {
     font-size: 18px;
     font-weight: 600;
-    color: var(--white);
-    margin-bottom: .5rem;
-    padding: 1rem .5rem;
+    margin-bottom: .3rem;
+    padding: .5rem 0;
+    color: var(--purple);
 }
 
     .returnGithubUsuario a i {
-        padding: .2rem;
+        padding: .3rem;
         font-size: 24px;
-        color: var(--yellow);
+        color: var(--white);
+        border-radius: .2rem;
+        transition: .2s linear;
+        background-color: var(--purple);
+    }
+
+    .returnGithubUsuario a i:hover {
+        transition: .2s linear;
+        background-color: var(--yellow);
     }
 
 .dados-input-content {
     gap: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .returnPerfilUsuario {
@@ -281,6 +244,12 @@ section {
     width: 340px;
     height: 340px;
     object-fit: cover;
+    border-radius: .4rem;
+    border: 2px solid var(--purple);
+}
+
+.returnNomeUsuario, .returnSkillsUsuario {
+    max-width: 280px;
 }
 
 footer {
@@ -290,22 +259,22 @@ footer {
     padding: 2rem 0;
     font-weight: 600;
     text-align: center;
-    color: var(--dark-gray);
+    color: var(--black-three);
     justify-content: center;
 }
 
 footer a {
-    color: var(--dark-gray);
+    color: var(--black-three);
 }
 
     footer a:hover {
-        color: var(--red-two);
+        color: var(--purple);
     }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .container {
         height: auto;
-        max-width: 375px;
+        max-width: 470px;
         padding: 2rem 0rem;
     }
 
@@ -339,25 +308,15 @@ footer a {
         max-width: 375px;
         flex-direction: column;
         justify-content: center;
-    }
-
-    section {
-        gap: .6rem;
-        max-width: 340px;
-        display: flex;
-        padding: 1.5rem;
-        flex-direction: column;
-    }
+    }   
 
     footer {
         padding: 1rem 0 0 0;
     }
 
-    .challenge-extra-content {
+    .challenge-extra-content, .challenge-extra-return {
         width: 340px;
         justify-content: center;
-        border: 2px solid var(--yellow);
-        box-shadow: 4px 4px 0 var(--dark-gray);
     }
 
     .dados-input-content {
@@ -366,5 +325,19 @@ footer a {
 
     .input-content-dados {
         text-align: center;
+    }
+
+    .returnTitle {
+        margin-bottom: .5rem;
+    }
+
+    .returnPerfilUsuario {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+    .returnPerfilUsuario img {
+        width: 300px;
+        height: 300px;
     }
 }

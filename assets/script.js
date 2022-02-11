@@ -31,9 +31,9 @@ function submit() {
     returnSkillsUsuario.innerHTML = `${skills}`
 
     returnGithub.innerHTML = 'Redes Sociais:'
-    returnGithubUsuario.innerHTML = `<a href="${github}" target="_blank"><i class="fa-brands fa-github"></i></a>, 
-                                     <a href="${twitter}" target="_blank"><i class="fa-brands fa-twitter"></i></a>,
-                                     <a href="${instagram}" target="_blank"><i class="fa-brands fa-instagram"></i></a>,
+    returnGithubUsuario.innerHTML = `<a href="${github}" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                                     <a href="${twitter}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                     <a href="${instagram}" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                      <a href="${linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>`
 }
 
