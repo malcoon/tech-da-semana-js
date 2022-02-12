@@ -1,3 +1,4 @@
+// Obter dados
 const returnPerfil = document.getElementById("returnPerfil")
 const returnNome = document.getElementById("returnNome")
 const returnIdade = document.getElementById("returnIdade")
@@ -38,3 +39,15 @@ function submit() {
 }
 
 button = document.getElementById('btn-submit').addEventListener("click", submit)
+
+// Mostrar dados
+const obterDados = document.querySelector('.challenge-extra-return')
+
+document.querySelector('#obterDados').onclick = () => {
+    obterDados.classList.toggle('active')
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+document.querySelector('.close').onclick = () => {
+    obterDados.classList.remove('active');
+}

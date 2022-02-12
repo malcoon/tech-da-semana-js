@@ -71,7 +71,7 @@ header {
     font-size: 32px;
     font-weight: bold;
     align-items: center;
-    color: var(--yellow);
+    color: var(--red-two);
 }
 
 .logo-js {
@@ -111,7 +111,7 @@ section {
 }
 
     .challenge-extra a {
-        color: var(--yellow);
+        color: var(--red-two);
     }
 
 /* Desafio Extra*/
@@ -157,21 +157,42 @@ section {
     }
 
 .challenge-extra-return {
-    width: 700px;
-    display: flex;
+    width: 650px;
+    display: none;
+    z-index: 9999;
+    position: absolute;
     color: var(--white); 
+    height: fit-content;
     border-radius: .4rem;
     justify-content: center;
-    height: calc(100% - 330px);
     background-color: var(--white);
     border: 2px solid var(--purple);
     box-shadow: -4px 4px 0 var(--purple);
 }
 
+    .challenge-extra-return.active {
+        top: 30%;
+        display: flex;
+        transition: .2s ease-in;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 .returnTitle {
     font-size: 18px;
     font-style: italic;
     margin-bottom: 2rem;
+    color: var(--purple);
 }
 
 .btn-cadastro input {
@@ -187,8 +208,8 @@ section {
 }
 
     .btn-cadastro input:hover {
-        color: var(--black-two);
-        background-color: var(--yellow);
+        color: var(--white);
+        background-color: var(--red-two);
     }
 
 .returnNome, .returnIdade, .returnSkills, .returnGithub {
@@ -208,15 +229,14 @@ section {
     .returnGithubUsuario a i {
         padding: .3rem;
         font-size: 24px;
-        color: var(--white);
+        color: var(--purple);
         border-radius: .2rem;
         transition: .2s linear;
-        background-color: var(--purple);
     }
 
     .returnGithubUsuario a i:hover {
         transition: .2s linear;
-        background-color: var(--yellow);
+        color: var(--red-two);
     }
 
 .dados-input-content {
@@ -228,22 +248,41 @@ section {
 .returnPerfilUsuario {
     width: 100%;
     height: 100%;
-    max-width: 340px;
+    max-width: 300px;
     overflow: hidden;
     object-fit: fill;
-    max-height: 340px;
+    max-height: 300px;
+    margin-right: 1rem;
 }
 
 .returnPerfilUsuario img {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: .4rem;
-    border: 2px solid var(--purple);
 }
 
 .returnNomeUsuario, .returnSkillsUsuario {
     max-width: 280px;
+}
+
+.close {
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+    .close i {
+        color: var(--purple);
+    }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: var(--black-three);
+    box-shadow: 0 0 0px 1000px var(--white) inset;
 }
 
 footer {
@@ -328,10 +367,15 @@ footer a {
     .returnPerfilUsuario {
         max-width: 300px;
         max-height: 300px;
+        margin-right: 0;
     }
     
     .returnPerfilUsuario img {
         width: 300px;
         height: 300px;
+    }
+
+    .challenge-extra-return.active {
+        top: 28%;
     }
 }
