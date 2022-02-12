@@ -81,21 +81,19 @@ header {
 
 /* main */
 main {
-    gap: 1.4rem;
-    display: grid;
+    gap: 2rem;
+    display: flex;
     margin: 0 auto;
     padding: 1rem 0;
     font-size: 14px;
     max-width: 1440px;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "extra return";
+    align-items: center;
+    justify-content: space-around;
 }
 
 section {
     width: 700px;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 }
 
 .challenge-link {
@@ -112,21 +110,13 @@ section {
     line-height: 1.4rem;
 }
 
-.challenge-extra-content {
-    grid-area: extra;
-}
-
     .challenge-extra a {
         color: var(--yellow);
     }
 
-.challenge-extra-return {
-    grid-area: return;
-}
-
 /* Desafio Extra*/
 .challenge-extra-content {
-    width: 700px;
+    width: 650px;
     justify-content: center;
 }
 
@@ -168,8 +158,10 @@ section {
 
 .challenge-extra-return {
     width: 700px;
-    color: var(--white);
+    display: flex;
+    color: var(--white); 
     border-radius: .4rem;
+    justify-content: center;
     height: calc(100% - 330px);
     background-color: var(--white);
     border: 2px solid var(--purple);
@@ -177,6 +169,7 @@ section {
 }
 
 .returnTitle {
+    font-size: 18px;
     font-style: italic;
     margin-bottom: 2rem;
 }
@@ -229,6 +222,7 @@ section {
 .dados-input-content {
     gap: 1rem;
     display: flex;
+    align-items: center;
 }
 
 .returnPerfilUsuario {
