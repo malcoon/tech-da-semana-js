@@ -20,7 +20,7 @@ function submit() {
     
     returnTitle.innerHTML = 'Usuário Cadastrado!'
 
-    returnPerfilUsuario.innerHTML = `<img src="${perfil}">`
+    returnPerfilUsuario = `${perfil}`
 
     returnNome.innerHTML = 'Nome:'
     returnNomeUsuario.innerHTML = `${nome}`
@@ -39,6 +39,27 @@ function submit() {
 }
 
 button = document.getElementById('btn-submit').addEventListener("click", submit)
+
+// Import IMG from PC
+var openFile = function(event) {
+    var input = event.target;
+
+    var reader = new FileReader()
+    reader.onload = function(){
+      var dataURL = reader.result
+      var returnPerfil = document.getElementById('returnPerfilUsuario')
+      returnPerfil.src = dataURL
+    };
+    reader.readAsDataURL(input.files[0]);
+  };
+
+// Mostrar nome do arquivo carregado
+var input = document.getElementById('inputPerfil')
+var fileName = document.getElementById('fileName')
+
+input.addEventListener('change', function(){
+    fileName.textContent = this.files[0].name
+})
 
 // Mostrar dados
 const obterDados = document.querySelector('.challenge-extra-return')

@@ -12,8 +12,8 @@
 <div class="container">
 
     <header>
-        <a href="index.html">
-            <img src="assets/imgs/logo-ballerini.svg" alt="Logo Ballerini" class="logo-ballerini">
+        <a href="index.html" class="logo-ballerini">
+            <img src="assets/imgs/logo-ballerini.svg" alt="Logo Ballerini" >
         </a>
 
         <h1 class="primary-title">
@@ -27,29 +27,30 @@
                 <h3 class="dados-title">Preencha os campos abaixo:</h3>
 
                 <div class="dados-input">
-                    <label for="perfil">Url da sua foto:</label>
-                    <input type="url" name="perfil" class="perfil" id="inputPerfil">                 
+                    <label class="inputPerfilLoad" id="fileName" for="inputPerfil">Selecionar imagem</label>
+
+                    <input type="file" accept="image/*" name="perfil" class="perfil" id="inputPerfil" onchange='openFile(event)'>                
 
                     <label>Nome</label>
-                    <input required type="text" name="nome" class="name" id="inputNome">
+                    <input type="text" name="nome" class="name" id="inputNome">
 
                     <label>Idade</label>
-                    <input required type="number" name="idade" class="idade" id="inputIdade">
+                    <input type="number" name="idade" class="idade" id="inputIdade">
 
                     <label>Skills</label>
-                    <input required type="text" name="skills" class="skills" id="inputSkills">
+                    <input type="text" name="skills" class="skills" id="inputSkills">
 
                     <label>GitHub</label>
-                    <input required type="text" name="github" class="github" id="inputGithub">
+                    <input type="text" name="github" class="github" id="inputGithub">
 
                     <label>Twitter</label>
-                    <input required type="text" name="twitter" class="twitter" id="inputTwitter">
+                    <input type="text" name="twitter" class="twitter" id="inputTwitter">
 
                     <label>Instagram</label>
-                    <input required type="text" name="instagram" class="instagram" id="inputInstagram">
+                    <input type="text" name="instagram" class="instagram" id="inputInstagram">
 
                     <label>LinkedIn</label>
-                    <input required type="text" name="linkedin" class="linkedin" id="inputLinkedin">
+                    <input type="text" name="linkedin" class="linkedin" id="inputLinkedin">
 
                     <div class="btn-cadastro" id="obterDados">
                         <input  type="reset" class="btn-submit" id="btn-submit" value="Cadastrar">
@@ -60,14 +61,15 @@
 
         <section class="challenge-extra-return returnChallenge">
             <div class="dados">
-                <h3 class="dados-title returnTitle" id="returnTitle">Seus dados aparecerão aqui!</h3>
+                <h3 class="dados-title returnTitle" id="returnTitle"></h3>
                 <div class="close">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="dados-input-content">
                         <!-- perfil -->
                         <p class="returnPerfil" id="returnPerfil"></p>
-                        <p class="returnPerfilUsuario" id="returnPerfilUsuario"></p>
+                        <img class="returnPerfilUsuario" id="returnPerfilUsuario">
+
                     <div class="input-content-dados">
                         <!-- nome -->
                         <p class="returnNome" id="returnNome"></p>
