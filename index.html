@@ -34,11 +34,11 @@
                     <label>Nome</label>
                     <input type="text" name="nome" class="name" id="inputNome">
 
-                    <label>Idade</label>
-                    <input type="number" name="idade" class="idade" id="inputIdade">
-
                     <label>Skills</label>
                     <input type="text" name="skills" class="skills" id="inputSkills">
+
+                    <label>About me</label>
+                    <textarea type="text" name="about" class="about" id="inputAbout" rows="4"></textarea>
 
                     <label>GitHub</label>
                     <input type="text" name="github" class="github" id="inputGithub">
@@ -59,36 +59,41 @@
             </div>
         </section>
 
-        <section class="challenge-extra-return returnChallenge">
-            <div class="dados">
-                <h3 class="dados-title returnTitle" id="returnTitle"></h3>
+        <div class="resultCard">
+            <div class="resultDados">
+                <!--h3 class="dadosTitle returnTitle" id="returnTitle"></h3-->
+
                 <div class="close">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="dados-input-content">
-                        <!-- perfil -->
+
+                <div class="resultContent">
+                    <div class="picture">
                         <p class="returnPerfil" id="returnPerfil"></p>
                         <img class="returnPerfilUsuario" id="returnPerfilUsuario">
+                    </div>
 
-                    <div class="input-content-dados">
-                        <!-- nome -->
-                        <p class="returnNome" id="returnNome"></p>
-                        <p class="returnNomeUsuario" id="returnNomeUsuario"></p>
-                        <!-- idade -->
-                        <p class="returnIdade" id="returnIdade"></p>
-                        <p class="returnIdadeUsuario" id="returnIdadeUsuario"></p>
-                        <!-- skills -->
-                        <p class="returnSkills" id="returnSkills"></p>
-                        <p class="returnSkillsUsuario" id="returnSkillsUsuario"></p>
-                        <!-- github -->
-                        <p class="returnGithub" id="returnGithub"></p>
-                        <p class="returnGithubUsuario">
-                            <a href="" id="returnGithubUsuario"></a>
-                        </p>
+                    <div class="dadosUsuario">
+                        <div class="dadosUsuarioTextOne">
+                            <p class="returnNomeUsuario" id="returnNomeUsuario"></p>
+                            <p class="returnSkillsUsuario" id="returnSkillsUsuario"></p>
+                        </div>
+
+                        <div class="dadosUsuarioTextAbout">
+                            <p class="returnAbout" id="returnAbout"></p>
+                            <p class="returnAboutUsuario" id="returnAboutUsuario"></p>
+                        </div>
+
+                        <div class="dadosUsuarioTextSocial">
+                            <p class="returnGithub" id="returnGithub"></p>
+                            <p class="returnGithubUsuario">
+                                <a href="" id="returnGithubUsuario"></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>

@@ -1,7 +1,7 @@
 // Obter dados
 const returnPerfil = document.getElementById("returnPerfil")
 const returnNome = document.getElementById("returnNome")
-const returnIdade = document.getElementById("returnIdade")
+const returnAbout = document.getElementById("returnAbout")
 const returnSkills = document.getElementById("returnSkills")
 const returnGithub = document.getElementById("returnGithub")
 const returnTwitter = document.getElementById("returnTwitter")
@@ -10,7 +10,7 @@ const returnLinkedin = document.getElementById("returnLinkedin")
 
 function submit() {
     nome = document.getElementById('inputNome').value
-    idade = document.getElementById('inputIdade').value
+    about = document.getElementById('inputAbout').value
     skills = document.getElementById('inputSkills').value
     github = document.getElementById('inputGithub').value
     twitter = document.getElementById('inputTwitter').value
@@ -18,18 +18,15 @@ function submit() {
     linkedin = document.getElementById('inputLinkedin').value
     perfil = document.getElementById('inputPerfil').value
     
-    returnTitle.innerHTML = 'Usuário Cadastrado!'
+    // returnTitle.innerHTML = 'Usuário Cadastrado!'
 
     returnPerfilUsuario = `${perfil}`
 
-    returnNome.innerHTML = 'Nome:'
     returnNomeUsuario.innerHTML = `${nome}`
-
-    returnIdade.innerHTML = 'Idade:'
-    returnIdadeUsuario.innerHTML = `${idade} anos`
-
-    returnSkills.innerHTML = 'Skills:'
     returnSkillsUsuario.innerHTML = `${skills}`
+
+    returnAbout.innerHTML = 'About:'
+    returnAboutUsuario.innerHTML = `${about}`
 
     returnGithub.innerHTML = 'Redes Sociais:'
     returnGithubUsuario.innerHTML = `<a href="${github}" target="_blank"><i class="fa-brands fa-github"></i></a> 
@@ -62,7 +59,7 @@ input.addEventListener('change', function(){
 })
 
 // Mostrar dados
-const obterDados = document.querySelector('.challenge-extra-return')
+const obterDados = document.querySelector('.resultCard')
 
 document.querySelector('#obterDados').onclick = () => {
     obterDados.classList.toggle('active')
