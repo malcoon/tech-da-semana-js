@@ -474,3 +474,19 @@ footer a {
         top: 26%;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .challenge-extra-content, .resultCard {
+        width: 310px;
+        justify-content: center;
+    }
+
+    .picture {
+        max-width: 300px;
+    }
+
+    .picture img {
+        width: 295px;
+        height: 340px;
+    }
+}
