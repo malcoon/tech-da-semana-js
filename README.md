@@ -2,10 +2,9 @@
 
 ### Desafio era fazer a Leitura de Inputs e Exibir as informações fornecidas.
 
-[Preview](https://malcoon.github.io/tech-da-semana-js/)
+[Live Preview](https://malcoon.github.io/tech-da-semana-js/)
 
-### - Screenshot
-![](assets/imgs/screenshot.png)
+![](assets/imgs/demo.gif)
 
 ## Tecnologias usadas:
 * HTML5
