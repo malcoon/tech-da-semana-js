@@ -79,8 +79,8 @@ header {
         padding: .2rem .8rem;
         top: calc(50% + 8px);
         left: calc(50% - 84px);
-        transform: rotate(-1deg);
         content: 'Semana Tech';
+        transform: rotate(-1deg);
         background-image: linear-gradient(-45deg, var(--purple), var(--purple)) 
     }
 
@@ -113,7 +113,7 @@ main {
 
 section {
     width: 700px;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 
 .challenge-extra a {
@@ -217,8 +217,8 @@ label.inputPerfilLoad {
     }
 
     .returnGithubUsuario a i:hover {
-        transition: .2s linear;
         color: var(--red-two);
+        transition: .2s linear;
     }
 
 .dados-input-content {
@@ -233,10 +233,10 @@ label.inputPerfilLoad {
     right: 1rem;
     height: 1.8rem;
     cursor: pointer;
-    line-height: 1.9rem;
     font-size: 1.2rem;
     text-align: center;
     position: absolute;
+    line-height: 1.9rem;
     border-radius: 100%;
     background-color: var(--red-two);
 }
@@ -261,8 +261,8 @@ label.inputPerfilLoad {
     height: fit-content;
     border-radius: 1rem;
     justify-content: center;
-    background-color: var(--white);
     border: 1px solid var(--gray);
+    background-color: var(--white);
     box-shadow: 0 5px 5px var(--gray);
 }
 
@@ -275,12 +275,12 @@ label.inputPerfilLoad {
 
 @keyframes slide-in-bottom {
     0% {
-      transform: translateY(50px);
-      opacity: 0;
+        opacity: 0;
+        transform: translateY(50px);
     }
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        opacity: 1;
+        transform: translateY(0);
     }
   }
 
@@ -341,8 +341,8 @@ label.inputPerfilLoad {
     display: flex;
     margin: 0 auto;
     max-width: 21rem;
-    flex-direction: column;
     margin-bottom: 1rem;
+    flex-direction: column;
 }
 
 .returnAbout {
@@ -361,8 +361,8 @@ label.inputPerfilLoad {
     display: flex;
     margin: 0 auto;
     max-width: 21rem;
-    flex-direction: column;
     margin-bottom: 1rem;
+    flex-direction: column;
 }
 
 .returnGithub {
@@ -382,7 +382,7 @@ footer {
     width: 100%;
     display: flex;
     font-size: 12px;
-    padding: 2rem 0;
+    padding: 1rem 0;
     font-weight: 600;
     text-align: center;
     color: var(--black-three);
@@ -434,8 +434,8 @@ footer a {
     main {
         gap: 2rem;
         display: flex;
-        padding: 1rem;
         max-width: 375px;
+        padding: 1rem 0 0 0;
         flex-direction: column;
         justify-content: center;
     }   
@@ -488,5 +488,9 @@ footer a {
     .picture img {
         width: 295px;
         height: 340px;
+    }
+
+    .dadosUsuarioTextAbout, .dadosUsuarioTextSocial {
+        width: 17rem;
     }
 }
