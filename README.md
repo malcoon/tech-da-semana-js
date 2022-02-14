@@ -4,9 +4,6 @@
 
 [Preview](https://malcoon.github.io/tech-da-semana-js/)
 
-### - Screenshot
-![](assets/imgs/screenshot.png)
-
 ## Tecnologias usadas:
 * HTML5
 * CSS3
