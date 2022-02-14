@@ -4,6 +4,8 @@
 
 [Preview](https://malcoon.github.io/tech-da-semana-js/)
 
+![](assets/img/demo.gif)
+
 ## Tecnologias usadas:
 * HTML5
 * CSS3
