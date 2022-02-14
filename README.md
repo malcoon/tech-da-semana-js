@@ -2,7 +2,7 @@
 
 ### Desafio era fazer a Leitura de Inputs e Exibir as informações fornecidas.
 
-[Preview](https://malcoon.github.io/tech-da-semana-js/)
+[Live Preview](https://malcoon.github.io/tech-da-semana-js/)
 
 ![](assets/imgs/demo.gif)
 
