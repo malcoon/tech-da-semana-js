@@ -8,7 +8,7 @@
 ![](assets/imgs/demo.gif)
 
 ### Update colors
-![](assets/imgs/demo.gif)
+![](assets/imgs/new-colors.png)
 
 ## Tecnologias usadas:
 * HTML5
