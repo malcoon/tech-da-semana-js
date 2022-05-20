@@ -4,6 +4,10 @@
 
 [Live Preview](https://malcoon.github.io/tech-da-semana-js/)
 
+## Original
+![](assets/imgs/demo.gif)
+
+### Update colors
 ![](assets/imgs/demo.gif)
 
 ## Tecnologias usadas:
